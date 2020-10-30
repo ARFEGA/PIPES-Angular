@@ -46,9 +46,33 @@
                     </tr>
                     <tr>
                         <td>number</td>
-                        <td>Convierte a número</td>
+                        <td>Convierte a número una cadena</td>
                         <td>{{PI}}</td>
                         <td>{{ PI | number }}</td>
+                    </tr>
+                    <tr>
+                        <td>number:'3.0-0'</td>
+                        <td>Convierte a número una cadena y además retorna tres enteros y ningún decimal.</td>
+                        <td>{{PI}}</td>
+                        <td>{{ PI | number:'3.0-0' }}</td>
+                    </tr>
+                    <tr>
+                        <td>number:'3.0-2'</td>
+                        <td>Convierte a número una cadena y además retorna tres enteros y dos decimales.</td>
+                        <td>{{PI}}</td>
+                        <td>{{ PI | number:'3.0-2' }}</td>
+                    </tr>
+                    <tr>
+                        <td>percent</td>
+                        <td>Pasa a formato de porcentaje.</td>
+                        <td>{{porcentaje}}</td>
+                        <td>{{ porcentaje | percent}}</td>
+                    </tr>
+                    <tr>
+                        <td>percent:'2-0-2'</td>
+                        <td>Pasa a formato de porcentaje con la cantidad de dígitos indocados en la parte entera y en la parte decimal.</td>
+                        <td>{{porcentaje}}</td>
+                        <td>{{ porcentaje | percent:'2.0-2'}}</td>
                     </tr>
                 </tbody>
             </table>

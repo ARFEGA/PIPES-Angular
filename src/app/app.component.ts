@@ -9,5 +9,6 @@ export class AppComponent {
   title = 'Pipes-Angular';
   nombre:string="Angular";
   numeros=[1,2,3,4,5,6,7,8,9,10];
-  PI:string="3.1416" ;
+  PI:string=Math.PI.toString() ;
+  porcentaje:string="0.234";
 }
