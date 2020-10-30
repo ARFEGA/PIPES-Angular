@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  urlVideo:string="https://www.youtube.com/embed/QbWJO8RMg1A";
   idioma:string='es';
   title = 'Pipes-Angular';
   nombre:string="Angular";
