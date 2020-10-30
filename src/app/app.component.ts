@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  idioma:string='es';
   title = 'Pipes-Angular';
   nombre:string="Angular";
   numeros=[1,2,3,4,5,6,7,8,9,10];
@@ -28,4 +29,8 @@ export class AppComponent {
     resolve("This is EUROPE")
     }, 4500);
   })
+  fecha:Date=new Date();
+  cambiaIdioma(auxIdioma){
+    this.idioma=auxIdioma;
+  }
 }

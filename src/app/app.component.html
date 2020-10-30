@@ -87,6 +87,39 @@
                         <td>{{ money | currency:'EUR':'symbol':'.0-3'}}</td>
                     </tr>
                     <tr>
+                        <td>Date</td>
+                        <td>Formato fecha.</td>
+                        <td>{{fecha}}</td>
+                        <td>{{ fecha | date}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date:'medium'</td>
+                        <td>Formato fecha media.</td>
+                        <td>{{fecha}}</td>
+                        <td>{{ fecha | date:'medium'}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date:'short'</td>
+                        <td>Formato fecha corta.</td>
+                        <td>{{fecha}}</td>
+                        <td>{{ fecha | date:'short'}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date:'MMMM - dd'</td>
+                        <td>Formato fecha personalizada.</td>
+                        <td>{{fecha}}</td>
+                        <td>{{ fecha | date:'dd - MMMM'}}</td>
+                    </tr>
+                    <tr>
+                        <button (click)="cambiaIdioma('es')" class="mr-1 btn btn-primary">Español</button>
+                        <button (click)="cambiaIdioma('fr')" class="mr-1 btn btn-secondary">Frances</button>
+                        <button (click)="cambiaIdioma('en')" class="mr-1 btn btn-outline-secondary">Ingles</button>
+                        <td>Date:'MMMM - dd'</td>
+                        <td>Formato fecha personalizada pero en {{idioma}}.</td>
+                        <td>{{fecha}}</td>
+                        <td>{{ fecha | date:'dd - MMMM':'':idioma}}</td>
+                    </tr>
+                    <tr>
                         <td>async</td>
                         <td>Maneja el resultado de una promesa.</td>
                         <td>Se muestra a los 4,5 segundos</td>
