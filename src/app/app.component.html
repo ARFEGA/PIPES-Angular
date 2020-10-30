@@ -7,21 +7,42 @@
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th>Valor Entrada</th>
                         <th>Pipe</th>
+                        <th>Descripción</th>
+                        <th>Valor Entrada</th>
                         <th>Valor Salida</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>{{nombre}}</td>
                         <td>upercase</td>
+                        <td>Pasa a mayusculas</td>
+                        <td>{{nombre}}</td>
                         <td>{{ nombre | uppercase }}</td>
                     </tr>
                     <tr>
+                        <td>lowercase</td>
+                        <td>Pasa a minusculas</td>
                         <td>{{nombre}}</td>
-                        <td>upercase</td>
                         <td>{{ nombre | lowercase }}</td>
+                    </tr>
+                    <tr>
+                        <td>slice:[caracteres]</td>
+                        <td>Elimina caracteres indicados por la izd. de una cadena.</td>
+                        <td>{{nombre}}</td>
+                        <td>{{ nombre | slice:3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>slice:[inicio]:[caracteres]</td>
+                        <td>Desde una posición dada, muestra el número de caracteres indicado de una cadena.</td>
+                        <td>{{nombre}}</td>
+                        <td>{{ nombre | slice:0:3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>slice:[inicio]:[posiciones-muestra]</td>
+                        <td>Desde una posición dada, muestra el número de elementos indicado de un array .</td>
+                        <td>{{numeros}}</td>
+                        <td>{{ numeros | slice:0:3 }}</td>
                     </tr>
                 </tbody>
             </table>
