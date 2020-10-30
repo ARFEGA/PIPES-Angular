@@ -22,4 +22,10 @@ export class AppComponent {
     idioma:"Italiano"
     }
   };
+
+  miPromesa=new Promise<string>((resolve) =>{
+  setTimeout(() => {
+    resolve("This is EUROPE")
+    }, 4500);
+  })
 }

@@ -86,6 +86,12 @@
                         <td>{{money}}</td>
                         <td>{{ money | currency:'EUR':'symbol':'.0-3'}}</td>
                     </tr>
+                    <tr>
+                        <td>async</td>
+                        <td>Maneja el resultado de una promesa.</td>
+                        <td>Se muestra a los 4,5 segundos</td>
+                        <td>{{ miPromesa | async}}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
