@@ -74,8 +74,25 @@
                         <td>{{porcentaje}}</td>
                         <td>{{ porcentaje | percent:'2.0-2'}}</td>
                     </tr>
+                    <tr>
+                        <td>currency</td>
+                        <td>Formato moneda $.</td>
+                        <td>{{money}}</td>
+                        <td>{{ money | currency}}</td>
+                    </tr>
+                    <tr>
+                        <td>currency:'EUR'</td>
+                        <td>Formato moneda €.</td>
+                        <td>{{money}}</td>
+                        <td>{{ money | currency:'EUR':'symbol':'.0-3'}}</td>
+                    </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col">
+            <pre>{{europa | json}}</pre>
         </div>
     </div>
 </div>
