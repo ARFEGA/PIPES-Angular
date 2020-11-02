@@ -15,6 +15,15 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Pipe Custom PWD</td>
+                        <td>Muestra u oculta la pwd <button (click)='pwdActiva=!pwdActiva' class="btn btn-primary">
+                            PWD
+                        </button></td>
+                        <td>{{password}}</td>
+                        <td>{{password | pwd:pwdActiva}}</td>
+                    
+                    </tr>
+                    <tr>
                         <td>Pipe custom</td>
                         <td>Pipe customizada</td>
                         <td>{{lenguajes}}</td>

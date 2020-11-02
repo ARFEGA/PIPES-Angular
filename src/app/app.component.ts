@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  pwdActiva:boolean=true;
+  password:string="1a2b3c";
   urlVideo:string="https://www.youtube.com/embed/QbWJO8RMg1A";
   idioma:string='es';
   title = 'Pipes-Angular';
